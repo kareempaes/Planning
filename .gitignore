@@ -1,0 +1,6 @@
+# Obsidian (avoid noisy local state)
+.obsidian/workspace*
+.obsidian/cache/
+
+# OS junk
+.DS_Store
