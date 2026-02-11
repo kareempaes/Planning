@@ -1,0 +1,246 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	background: #f5f5f5;
+	color: #333;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 20px;
+	background: #1a73e8;
+	color: white;
+}
+
+header button {
+	background: none;
+	border: 1px solid white;
+	color: white;
+	padding: 6px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 18px;
+}
+
+/* Auth page */
+.auth-page {
+	max-width: 360px;
+	margin: 80px auto;
+	padding: 24px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page h1 {
+	margin-bottom: 16px;
+}
+
+.auth-page form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.auth-page input {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.auth-page button[type='submit'] {
+	padding: 10px;
+	background: #1a73e8;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.auth-page .toggle {
+	background: none;
+	border: none;
+	color: #1a73e8;
+	cursor: pointer;
+	margin-top: 12px;
+	font-size: 13px;
+}
+
+.auth-page .error {
+	color: #d32f2f;
+	font-size: 13px;
+}
+
+/* Home page */
+.home {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 0 16px;
+}
+
+.home h2 {
+	margin: 16px 0 8px;
+}
+
+.home .empty {
+	color: #888;
+	font-size: 14px;
+}
+
+.search-bar input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.search-results {
+	list-style: none;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-top: 4px;
+}
+
+.search-results li button {
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	font-size: 14px;
+}
+
+.search-results li button:hover {
+	background: #f0f0f0;
+}
+
+.conversation-list ul {
+	list-style: none;
+}
+
+.conversation-list li a {
+	display: block;
+	padding: 12px;
+	background: white;
+	margin-bottom: 4px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.conversation-list li a:hover {
+	background: #e8f0fe;
+}
+
+.conversation-list .preview {
+	display: block;
+	font-size: 13px;
+	color: #666;
+	margin-top: 4px;
+}
+
+/* Chat page */
+.chat-page {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 48px);
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.chat-header {
+	padding: 8px 16px;
+}
+
+.chat-header a {
+	text-decoration: none;
+	color: #1a73e8;
+}
+
+.messages {
+	flex: 1;
+	overflow-y: auto;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.message {
+	display: flex;
+}
+
+.message.own {
+	justify-content: flex-end;
+}
+
+.bubble {
+	max-width: 70%;
+	padding: 10px 14px;
+	border-radius: 16px;
+	background: white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message.own .bubble {
+	background: #1a73e8;
+	color: white;
+}
+
+.bubble p {
+	margin: 0;
+	word-wrap: break-word;
+}
+
+.bubble small {
+	display: block;
+	font-size: 11px;
+	margin-top: 4px;
+	opacity: 0.7;
+}
+
+.send-bar {
+	display: flex;
+	gap: 8px;
+	padding: 12px 16px;
+	background: white;
+	border-top: 1px solid #eee;
+}
+
+.send-bar input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	font-size: 14px;
+}
+
+.send-bar button {
+	padding: 10px 20px;
+	background: #1a73e8;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.send-bar button:disabled {
+	opacity: 0.5;
+	cursor: default;
+}

@@ -14,19 +14,20 @@ This should be the success criteria in bullet form. This is what is required for
 
 ## Scope
 
-This should be the full functionality scope of this feature. This should also be in bullet form.
+This should be an obsidian mapping to the features VISION.md files in bullet form
+example ![[features/<feature-slug>/VISION.md]]
 
 ## Architecture
 
 We use ERD Mermaid file for visual representation, This can be broken down into multiple files
-example ![[docs/diagrams/architectures.mmd.md]]
+example ![[docs/diagrams/architectures.md]]
 
 ## Workflows
 
 - see Architecture
-example ![[docs/diagrams/workflows.mmd.md]]
+example ![[docs/diagrams/workflows.md]]
 
 ## Schema
 
 - see Architecture
-example ![[docs/diagrams/schema.mmd.md]]
+example ![[docs/diagrams/schema.md]]

@@ -47,12 +47,12 @@ Build a small chat application that supports 1:1 and group messaging with real-t
 
 ## Architecture
 
-![[docs/diagrams/architectures.mmd.md]]
+![[docs/diagrams/architectures.md]]
 
 ## Workflows
 
-![[docs/diagrams/workflows.mmd.md]]
+![[docs/diagrams/workflows.md]]
 
 ## Schema
 
-![[docs/diagrams/schema.mmd.md]]
+![[docs/diagrams/schema.md]]

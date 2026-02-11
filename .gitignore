@@ -4,3 +4,7 @@
 
 # OS junk
 .DS_Store
+
+# SvelteKit
+web/node_modules/
+web/.svelte-kit/
